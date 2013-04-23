@@ -1,5 +1,9 @@
-#NOTE: I left a lot of my notes and debugging lines in the program so I could more
+#NB: I left a lot of my notes and debugging lines in the program so I could more
 #easily remember what's going on when I look at it later on down the line
+
+#MORE IMPORTANT: from a financial perspective, I don't the reasoning behind my 
+#optimiser algorithm is very sound, so I don't use it to make any actual 
+#decisions at this point.
 
 import math
 import sys
@@ -91,6 +95,7 @@ def scenarios():
     return loans 
    
 def optimiser():
+#Here's where it gets financially questionable...
     loans = scenarios()
     num_loans = len(loans) - 1
 ##    print 'num_loans: ', num_loans
